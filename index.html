@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto|Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Anurag Gharat</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body >
@@ -24,11 +24,11 @@
                 </div>
             </nav>
             <div class="landing-text">
-                <h1 class="intro">Hey There! I am </h1>
+                <h1 class="intro">Hey There! I'm </h1>
                 <h1 class="name"><span>Anurag Gharat</span></h1>
                 <h1 class="status">Frontend Developer <span class="slash">/</span> Designer</h1>
                 <h1 class="font-secondary">I can
-                    <span class="txt-type" data-wait="300" data-words='["make Amazing Websites", "create Native Apps", "design Beautiful UIs "]'></span>
+                    <span class="txt-type" data-wait="300" data-words='["develop Websites", "write Backend", "design UIs "]'></span>
             </div>
             <div class="landing-socialmedia">
 
@@ -36,7 +36,15 @@
 
         </section>
         </div>
-        <div class="no-particle-container">
+        <div class="no-particle-container"  
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
        
             <section class="about" id="about">
                 <div class="heading">
@@ -61,7 +69,15 @@
                 <div class="container skills-text">
                     I begin my coding journey by learning Python and C.I have been working on Webdevlopment for past one year and proficient in Front-End Technologies.Along with that I am a beginner level programmer in Backend frameworks like Laravel & Django.I use AbobeXD for designing and making prototypes.
                  </div>
-                <div class="container container-icons">
+                <div class="container container-icons"
+                data-aos="zoom-in"
+                data-aos-offset="200"
+                data-aos-delay="0"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
 
                     <div class="box normal"><i class="fab fa-react"></i></div>
                     <div class="box horizontal"><i class="fab fa-vuejs"></i></div>
@@ -81,7 +97,15 @@
             </section>
             <section class="contact" id="contact">
 
-                    <div class="contact-card">
+                    <div class="contact-card"
+                    data-aos="fade-in"
+                data-aos-offset="200"
+                data-aos-delay="0"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
                         
                     <div class="heading">
                         <h1>Contact Me</h1>
@@ -160,6 +184,7 @@
 <script src="./js/app.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 <script>
     particlesJS.load('particles-js','particles.json',function(){
         console.log('working');
@@ -170,3 +195,6 @@
             $(this).addClass('active').siblings().removeClass('active')
         })
 </script>
+<script>
+    AOS.init();
+  </script>
