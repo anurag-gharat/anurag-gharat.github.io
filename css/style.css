@@ -463,8 +463,9 @@ styles for smaller screens
         text-align: center;
     }
     .col-4{
-        max-width: 100%;
-        height: 100vh;
+        width: 100vw;
+        max-width: 100vw;
+        max-height: 100vh;
     }
     .send{
         font-size: 12px;
@@ -490,5 +491,99 @@ styles for smaller screens
         margin-right: auto !important;
         border-radius: 75%;
         height: 250px;
+    }
+    .heading{
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 20px;
+        color: var(--secondary-color);
+    }
+    .contact-form>label{
+        margin-top: 15px;
+        color:grey;
+        font-size: 10px;
+    }
+    textarea{
+        margin-bottom: 10px;
+    }
+    .contact-form>input,.contact-form>textarea{
+        border: none;
+        font-size: 20px;
+        padding: 5px 10px;
+        border-bottom: 2px solid #00f2fe;
+        width: 100%;
+        background-color: transparent;
+    }
+    .contact-card{
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        color: #222222;
+        text-align: center;
+    }
+    .send{
+        width: 70%;
+        font-size: 10px;
+    }
+    footer{
+        max-width: 100vw;
+        height: auto;
+    }
+    .bio{
+        padding: 0px;
+        text-align: center;
+        max-width: 100vw;
+    }
+    .bio>h1{
+        font-size: 15px;
+    }
+    .bio>h2{
+        font-size: 12px;
+    }
+    .bio>h3{
+        font-size: 10px;
+    }
+    footer .fab{
+        font-size: 50px !important;
+    }
+    .work{
+        max-width: 100vw;
+        height: auto;
+        text-align: center;
+        padding: 0px;
+    }
+    .git,.design{
+        margin: 0px;
+        padding: 0px auto;
+        text-align: center;
+        width: 100%;
+    }
+    .design{
+        display: flex;
+        justify-content: space-around;
+    }
+    .design>a{
+        margin: 0px;
+    }
+    .third-part{
+        padding-top: 20px;
+        text-align: center;
+    }
+    .img-holder{
+
+        width: 100%;
+    }
+    .footer-img{
+        width: 60%;
+        height:100px;
+    }
+    .dark-footer{
+        max-width: 100vw;
+        height: 20px;
+        text-align: center;
+    }
+    .dark-footer>p{
+        font-size: 12px;
     }
   }
