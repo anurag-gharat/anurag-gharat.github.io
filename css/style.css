@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Spartan|Roboto|Roboto+Slab|Viaoda+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bellota|Caveat|Courgette|Dancing+Script|Indie+Flower|Lobster|Lobster+Two|Satisfy&display=swap');   
-   
-/* body{   
-    font-family: 'Noto Sans', sans-serif;
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Bellota', cursive;
-font-family: 'Lobster', cursive;
-font-family: 'Indie Flower', cursive;
-font-family: 'Dancing Script', cursive;
-font-family: 'Caveat', cursive;
-font-family: 'Courgette', cursive;
-font-family: 'Satisfy', cursive;
-font-family: 'Lobster Two', cursive;
-} */
+
 :root{
     --primary-color:#fff;
     --secondary-color:#c471ed;
@@ -39,7 +26,7 @@ body{
     overflow-x: hidden;
     scroll-behavior: smooth;
     z-index: -1;
-    /* overflow-y: hidden; */
+    overflow-y:scroll;
 }
 .no-pad{
     padding: 0px;
@@ -451,3 +438,28 @@ footer{
 .fa-behance-square:hover{
     color:#1769ff;
 }
+
+/* 
+styles for smaller screens
+*/
+
+/* useful styles */
+@media only screen and (max-width: 600px) {
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .col-6{
+        width: 100%;
+        height: 100vh;
+    }
+    .col-4{
+        width: 100%;
+        height: 100vh;
+    }
+    .send{
+        font-size: 12px;
+    }
+  }
