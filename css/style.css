@@ -614,10 +614,11 @@ styles for smaller screens
     .nav-links ul{
         display: flex;
         max-width: 100%;
-        max-height: 100vh;
+        min-height: 100vh;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding-left: 60px;
+        margin: auto;
+
     }
 }
