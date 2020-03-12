@@ -70,10 +70,11 @@ $(window).scroll(function(){
 
 const hamburger = document.querySelector('.hamburger')
 const navlinks = document.querySelector('.nav-links')
-const links  = document.querySelectorAll('.nav-links li')
+const links  = document.querySelectorAll('.link')
+
+
 hamburger.addEventListener("click",()=>{
-  navlinks.classList.toggle("open");
-    
-})
+    navlinks.classList.toggle("open");
+    hamburger.classList.add('.cross');
 
-
+  })
