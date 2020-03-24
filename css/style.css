@@ -461,7 +461,8 @@ styles for smaller screens
         overflow-x: hidden;
     }
     .scrolled{
-        background-color:grey;
+        background-color:#f8f8f8;
+        box-shadow: 1px 5px 4px 5px #f8f8f8;
     }
     .home{
         background-color: transparent !important;
@@ -638,7 +639,7 @@ styles for smaller screens
         width: 100%;
         clip-path: circle(100px at 90% -20%);
         -webkit-clip-path:circle(100px at 90% -20%);
-        background-color: slateblue;
+        background-color: var(--tertiary-color);
         transition: all 1s ease-out;
     }
     .nav-links.open{
@@ -654,8 +655,22 @@ styles for smaller screens
         text-align: center;
         margin: auto;
     }
+    .nav-links>ul>li>a{
+        color:white !important;
+        font-size: 2rem;
+    }
+    .active{
+        border-bottom:2px solid var(--secondary-color);
+        color: var(--secondary-color) !important;
+    }
     .navlinks.close{
         display: none;
+    }
+    .scrolled>.nav-links>ul>li>a{
+        color:white!important; 
+    }
+    .scrolled>.hamburger i{
+        color: black;
     }
 
 }
