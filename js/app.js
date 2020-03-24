@@ -66,7 +66,9 @@ class TypeWriter {
   }
 $(window).scroll(function(){
     $('nav').toggleClass('scrolled',$(this).scrollTop() > 500);
+    $('.hamburger').toggleClass('scrolledhamburger',$(this).scrollTop() > 500);
 });
+
 
 const hamburger = document.querySelector('.hamburger')
 const navlinks = document.querySelector('.nav-links')
@@ -75,6 +77,7 @@ const links  = document.querySelectorAll('.link')
 
 hamburger.addEventListener("click",()=>{
     navlinks.classList.toggle("open");
-    hamburger.classList.add('.cross');
+    hamburger.classList.add('cross');
 
   })
+  

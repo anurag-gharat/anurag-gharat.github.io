@@ -41,13 +41,10 @@ body{
 #particles-js{
     width: 100%;
     min-height: 100vh;
-   /* background-image: url("https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     background-attachment: fixed;
     background-color: #222222;
 }
+
 .row{
     display: flex;
     flex-direction: row;
@@ -112,6 +109,8 @@ nav>.logo{
     background-color: #fff;
     /* box-shadow: 1px 5px 4px 5px #f8f8f8; */
 }
+
+
 .scrolled>.nav-links>ul>li>a{
     color:grey!important; 
 }
@@ -442,6 +441,12 @@ footer{
 .fa-behance-square:hover{
     color:#1769ff;
 }
+.mobilediv{
+    background-color: aqua !important;
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
 
 /* 
 styles for smaller screens
@@ -455,9 +460,8 @@ styles for smaller screens
         height: 100%;
         overflow-x: hidden;
     }
-    #particle-js{
-        min-height: 100vh !important;
-        width: 100%;
+    .scrolled{
+        background-color:grey;
     }
     .home{
         background-color: transparent !important;
